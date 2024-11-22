@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from 'next/font/google'
 import "./globals.css";
+import Navbar from "./components/Navbar";
 import ReactQueryProvider from "./providers/ReactQueryProvider";
 
 
@@ -20,7 +21,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} antialiased`}>
         <ReactQueryProvider>
+          <>
+            <Navbar />
             {children}
+          </>
         </ReactQueryProvider>
       </body>
     </html>
