@@ -24,10 +24,10 @@ export default function TodoItem({
           className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-2xl"
         />
         <div>
-          <div className={`text-lg font-semibold capitalize ${todo.completed ? 'line-through text-slate-600' : ''}`}>
+          <div className={`text-base md:text-lg font-semibold capitalize ${todo.completed ? 'line-through text-slate-600' : ''}`}>
             {todo.task}
           </div>
-          <div className="text-sm text-slate-600 capitalize">
+          <div className="text-xs md:text-sm text-slate-600 capitalize">
             {todo.category}
           </div>
         </div>
