@@ -14,7 +14,10 @@ export default function TodoItem({
   const handleChangeTodo = () => onCheckTodo(todo)
 
   return (
-    <div className="bg-white flex items-center justify-between p-5 w-full rounded h-24">
+    <div 
+      className="bg-white flex items-center justify-between p-5 w-full rounded h-24"
+      data-testid="todo-item"
+    >
       <div className="flex gap-4 items-center">
         <input
           id="default-checkbox"

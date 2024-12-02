@@ -22,6 +22,7 @@ export default function FilterBar({
                         onClick={() => handleSelectCategory(category)}
                         key={`btn-${category}`}
                         type="button"
+                        data-testid={`${category}-filter-btn`}
                         className={`${selectedCategory === category ? 'bg-green-300' : ''} text-black bg-gray-200 hover:bg-green-400 font-semibold rounded-full text-xs md:text-sm px-5 py-2 me-2 uppercase`}
                     >
                         {category}
